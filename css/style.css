@@ -5,6 +5,8 @@
     --black:#13131a;
     --bg:#010103;
     --border:.1rem solid rgba(255,255,255,.3);
+    --mode:#ffffff;
+    --dtext: #010103;
 }
 
 *{
@@ -25,40 +27,25 @@
             scroll-behavior: smooth;
         }
 
-        html::-webkit-scrollbar {
-            background: transparent;
-        }
-
-        html::-webkit-scrollbar-track {
-            background: transparent;
-        }
-
-        html::-webkit-scrollbar-thumb {
-            background: #fff;
-            border-radius: 5rem;
-        }
-
         body {
-            background: white;
-            margin: 0;
+            background: var(--mode);
         }
 
         section {
-            padding: 2rem 7%;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
         }
  /* Cabeçalho */
         .header {
-            background: var(--bg);
+            background: black;
             display: flex;
             align-items: center;
             justify-content: space-between;
             padding: 0.3rem;
-            border-bottom: var(--border);
-            position: fixed;
             top: 0;
             left: 0;
             right: 0;
-            z-index: 1000;
         }
         
         .header .logo img {
@@ -84,14 +71,14 @@
             padding-bottom: .5rem;
         }
         
-        .header .navbar .icons div {
+        .header .icons div {
             color: #fff;
             cursor: pointer;
             font-size: 2.5rem;
             margin-left: 2rem;
         }
         
-        .header .navbar .icons div:hover {
+        .header .icons div:hover {
             color: var(--main-color);
         }
         
@@ -120,24 +107,12 @@
     font-size: 1.5rem;
     margin: 0 1rem; 
 }
- /* Estilo imagem */
-    .background-image {
-        display: block;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 3556px;
-  max-height: 2000px;
-}
-.center-image {
-    display: block;
-    margin: 0 auto;
-    max-width: 100%;
-}
  /* Rodapé */
 footer {
-    background-color: #010103;
+  background-color: #010103;
     padding: 20px;
     text-align: center;
+    margin-top: auto; 
   }
   
   .social-icons {
@@ -149,10 +124,116 @@ footer {
     margin: 0 10px;
     font-size: 24px;
     color: #333;
-    transition: color 0.3s;
+    transition: color 0.3s, font-size 0.3s;
   }
   
   .icon-link:hover {
     color: #d3ad7f;
   }
-  
+/*index*/
+.index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+  background: var(--mode);
+}
+.index .slider {
+  width: 80%; 
+  max-width: 1600px; 
+  height: auto; 
+  border-radius: 10px;
+  overflow: hidden;
+  margin-left: auto;
+    margin-right: auto;
+}
+
+.index .slides {
+  width: 500%; 
+  height: auto; 
+  display: flex;
+  transition: transform 0.5s ease; 
+}
+.index .slides input{
+  display: none;
+}
+
+.index .slide {
+  width: 20%;
+}
+
+.index .slide img {
+  width: 100%; 
+  height: auto;
+}
+
+/*navegacao manual css*/
+
+.index .navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+  margin-left: 380px;
+}
+
+.index .manual-btn{
+  border: 2px solid #d3ad7f;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  align-items: center;
+}
+
+.index .manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.index .manual-btn:hover{
+  background: #d3ad7f;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+/*navegacao automatica index*/
+
+.index .navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 862px;
+  margin-left: 380px;
+}
+
+.index .navigation-auto div{
+  border: 2px solid var(--mode);
+  padding: 5px;
+  border-radius: 10px;
+  transition: transform 0.5s ease;
+}
+
+.index .navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: var(--mode);
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: var(--mode);
+}
+
+#icon{
+  width: 25px;
+  cursor:pointer;
+}

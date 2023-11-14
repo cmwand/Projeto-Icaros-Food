@@ -1,0 +1,65 @@
+/*login*/
+.login .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 0;
+    background: var(--black);
+    margin-top: 150px;
+    margin-bottom: 120px;
+}
+
+.login .row .form {
+    flex: 1 1 45rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+ .login .row form h3{
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    color: #ffffff;
+ }
+
+ .login .row form .inputBox{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg);
+    border: var(--border);
+ }
+
+ .login .row form .inputBox material-icons{
+    color: #fff;
+    font-size: 2rem;
+    padding-left: 3rem;
+ }
+
+ .login .row form .inputBox input{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.7rem;
+    color: #ffffff;
+    text-transform: none;
+    background: none;
+    align-items: center;
+ }
+ .login .row form textarea{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background: var(--bg);
+    border: var(--border);
+    margin-left: 2rem;
+    color: #ffffff;
+    border: none; 
+    outline: none; 
+    resize: none;
+ }
+
+ .login b{
+  font-size: large;
+  color: #fff;
+ }

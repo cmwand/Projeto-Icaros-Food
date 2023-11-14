@@ -1,0 +1,27 @@
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header .logo img {
+        margin-right: 0;
+    }
+    .header .navbar {
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+    .header .icons {
+        margin-top: 1rem;
+    }
+    .index .slider {
+        width: 100%;
+        margin-left: 0;
+    }
+    .img-responsive{
+        max-width: 100%;
+        height: auto;
+}
+.icon-link {
+    font-size: 20px;
+  }
+}

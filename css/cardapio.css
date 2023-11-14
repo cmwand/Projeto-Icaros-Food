@@ -1,0 +1,69 @@
+.cardapio .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+    margin-bottom: 90px;
+    margin-top: 120px;
+    border-color: #000000;
+    
+ }
+ 
+ .cardapio .h1{
+   font-size:medium;
+   color: var(--dtext);
+ }
+ .cardapio .label{
+   font-size:medium;
+   color:#d3ad7f;
+ }
+ .cardapio .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 6rem 4rem;
+    border-color: #d3ad7f;
+ }
+
+ .cardapio .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--dtext);
+    padding: 2rem 0;
+    border-color: #000000;
+ }
+ .cardapio .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+ .cardapio .box-container .box h3{
+    padding:1rem 0;
+    font-size: 2rem;
+    color: var(--dtext);
+ }
+
+.cardapio .label .sel_val select {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #000000;
+    border: 1px solid #d3ad7f;
+    border-radius: 5px; 
+    background-color: #fff;
+  }
+  
+  .cardapio .label .sel_val select:hover {
+    border: 1px solid #d3ad7f;
+  }
+  
+  .cardapio .label .sel_val select option {
+    padding: 1rem;
+    background-color: #fff;
+    color: #000;
+    border: none;
+  }
+  
+  .cardapio .label .sel_val select:focus {
+    outline: none; 
+    border: 1px solid #d3ad7f;
+  }
