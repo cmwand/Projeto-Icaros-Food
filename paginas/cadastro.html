@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/cardapio.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+</head>
+<body>
+     <!-- Cabeçalho -->
+     <header class="header">
+        <div class="logo">
+            <img src="../img/logo.png" alt="">
+        </div>
+        <nav class="navbar">
+            <a href="../paginas/inicio.html">INÍCIO</a>
+            <a href="../paginas/cardapio.html">CARDÁPIO</a>
+            <a href="../paginas/contato.html">CONTATO</a>
+        </nav>
+        <div class="icons">
+            <!-- Outros Botões -->
+            <a href="pedidos.html">
+                <button class="btn">MEUS PEDIDOS</button>
+            </a>
+            <span class="divisor">|</span>
+            <a href="paginas/login.html" target="_blank">
+                <button class="btn">LOGIN</button>
+            </a>
+        </div>
+    </header>
+  <section class="login" id="login">
+    <div class="row">
+        <form action="">
+            <br>
+            <h3>Cadastro</h3>
+            <div class="inputBox">
+              <i class="material-icons" style="color:white">mail</i>
+              <label for="mail"></label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="inputBox">
+                <i class="material-icons" style="color:white">lock</i>
+                <label for="name"></label>
+                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+            </div>
+            <input type="submit" value="Fazer cadastro" class="btn" onclick="enviar();"> <br> <br>
+        </form>
+    </div>
+</section>
+   <!-- Rodapé -->
+   <footer class="bg-light py-3">
+    <div class="social-icons">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <a href="https://www.google.com" class="icon-link"><i class='bx bxl-facebook bx-lg'></i></a>
+        <a href="https://www.google.com" class="icon-link"><i class='bx bxl-whatsapp bx-lg'></i></a>
+        <a href="https://www.google.com" class="icon-link"><i class='bx bxl-instagram bx-lg'></i></a>
+        <a href="https://www.google.com" class="icon-link"><i class='bx bxl-tiktok bx-lg'></i></a>
+        <a href="https://www.google.com" class="icon-link"><i class='bx bxl-youtube bx-lg'></i></a>
+    </div>
+</footer>
+<div class="container">
+    <p class="text-center"></p>
+    <script src="javascript/script.js"></script>
+</body>
+</html>

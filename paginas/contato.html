@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/cardapio.css">
+    <link rel="stylesheet" href="../css/contato.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Contato</title>
+</head>
+<body>
+    <section class="contact" id="contact">
+        <div class="h1">Entre em contato conosco! Comunique problemas no pedido, problemas no site e sugestões, enviando sua mensagem abaixo.</div>
+        <div class="row">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.48640436006!2d-43.259072824765056!3d-22.858483636146428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997bff2f6f2ec9%3A0x479f97d77a3faab7!2sRua%20Cardoso%20de%20Morais%2C%20690%20-%20Bonsucesso%2C%20Rio%20de%20Janeiro%20-%20RJ%2C%2021032-000!5e0!3m2!1spt-BR!2sbr!4v1696448571726!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form action="">
+                <br>
+                <h3>Entre em contato</h3>
+                <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+                <div class="inputBox">
+                    <i class="material-icons" style="color:white">person</i>
+                    <label for="name"></label>
+                    <input type="text" id="name" name="name" placeholder="Nome" required>
+                </div>
+                <div class="inputBox">
+                    <i class="material-icons" style="color:white">mail</i>
+                    <label for="name"></label>
+                    <input type="email" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="inputBox">
+                    <i class="material-icons" style="color:white">forward_to_inbox</i>
+                    <textarea id="mensagem" name="mensagem" rows="4" placeholder="Mensagem" required></textarea>
+                </div>
+                <input type="submit" value="Enviar" class="btn" onclick="enviar();">
+            </form>
+        </div>
+    </section>
+            <!--js customizado link-->
+            <script src="javascript/script.js"></script>
+        </body>
+        </html>
