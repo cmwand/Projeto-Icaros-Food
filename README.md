@@ -1,9 +1,8 @@
 # Icaro's Food
 ![Logo Icaro's Food](./img/logo.png)
 
-<div style="background-color: #00d5a0; color: #ffffff; padding: 16px 24px;">
- <div style="font-size: 16px; font-weight: bold;"> Icaro's Food</div>
- <div style="font-size: 12px; font-weight: bold; color:#000000;">
 Projeto de um site estático de uma lanchonete usando HTML, CSS e JS.
- </div>
-</div>
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
