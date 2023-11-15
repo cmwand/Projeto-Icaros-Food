@@ -26,20 +26,85 @@ function startSlider() {
     }
 });
 
-// Formulário
-function enviar() {
-    
-    var nome = document.getElementById("name");
-    var nomeEmail = document.getElementById("email");
-    var mens = document.getElementById("mensagem");
+// login
 
-    if (nome.value == "" || nomeEmail.value == "" || mens.value == "")
-            alert("Um dos campos está vazio");
-            
-        else
-            if (nome.value != "") 
-                alert("Obrigado sr(a) " + nome.value + ", os seus dados foram encaminhados com sucesso!");
-    
+function onChangeEmail(){
+  toggleButtonsDisable();
+  toggleEmailErrors();
+
+}
+
+function onChangePassword(){
+  toggleButtonsDisable();
+  togglePasswordErrors();
+}
+
+
+function isEmailValid(){
+  const email = form.email().value;
+  if (!email){
+      return false;
+  }
+  return validateEmail(email);
+}
+
+
+function toggleEmailErrors(){
+  const email = form.email().value;
+  if (!email){
+    form.emailRequiredError().style.display = "block";
+  } else{
+    form.emailRequiredError().style.display = "none";
+  }
+
+  if (validateEmail(email)){
+    form.emailInvalidError().style.display = "none";
+  } else{
+    form.emailInvalidError().style.display = "block";
+  }
+
+}
+
+function togglePasswordErrors(){
+  const password = form.password().value;
+  if (!password){
+    form.passwordRequiredError().style.display = "block";
+  } else {
+    form.passwordRequiredError().style.display = "none";
+  }
+}
+
+
+
+function toggleButtonsDisable(){
+  const emailValid = isEmailValid();
+  form.recoverPassword().disabled = !emailValid;
+
+  const passwordValid = isPasswordValid();
+  form.login().disabled = !emailValid || !passwordValid;
+}
+
+
+function isPasswordValid(){
+  const password = form.password().value;
+  if(!password){
+      return false;
+  }
+  return true;
+}
+
+function validateEmail(email){
+  return /\S+@\S+.\S+/.test(email);
+}
+
+const form = {
+  email: () => document.getElementById('email'),
+  password: () => document.getElementById('password'),
+  login: () => document.getElementById('login-button'),
+  emailInvalidError: () => document.getElementById('email-invalid-error'),
+  emailRequiredError: () => document.getElementById('email-required-error'),
+  passwordRequiredError: () => document.getElementById('password-required-error'),
+  recoverPassword: () => document.getElementById('recover-password-button')
 }
 
 // Darkmode
