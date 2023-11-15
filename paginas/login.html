@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/cardapio.css">
-    <link rel="stylesheet" href="../css/contato.css">
     <link rel="stylesheet" href="../css/login.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Document</title>
@@ -14,21 +12,27 @@
 <body>
   <section class="login" id="login">
     <div class="row">
-        <form action="">
-            <br>
-            <h3>Login</h3>
-            <div class="inputBox">
-              <i class="material-icons" style="color:white">mail</i>
-              <label for="mail"></label>
-              <input type="email" id="email" name="email" placeholder="Email" required>
+        <form>
+            <div class="form-field">
+                <div><label>Email</label></div>
+                <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="seu@email.com"/>
+                <div class="error" id="email-required-error">Email é obrigatório</div>
+                <div class="error" id="email-invalid-error">Email é inválido</div>
             </div>
-            <div class="inputBox">
-                <i class="material-icons" style="color:white">lock</i>
-                <label for="name"></label>
-                <input type="password" id="senha" name="senha" placeholder="Senha" required>
+            <div class="form-field">
+                <div><label>Senha</label></div>
+                <input type="password" name="password" id="password" onchange="onChangePassword()" placeholder="Senha"/>
+                <div class="error" id="password-required-error">Senha é obrigatório</div>
             </div>
-            <input type="submit" value="Entrar" class="btn" onclick="enviar();"> <br> <br>
-            <a href="/paginas/cadastro.html"> <input type="button" value="Não possui conta?" class="btn"> </a> <br> <br>
+            <div>
+                <button type="button" class="clear" id="recover-password-button" disabled="true"> Recuperar Senha</button>
+            </div>
+            <div>
+                <button type="button" class="solid" id="login-button" disabled="true">Entrar</button>
+            </div>
+            <div>
+                <button type="button" class="outline">Registrar</button>
+            </div>
         </form>
     </div>
 </section>
