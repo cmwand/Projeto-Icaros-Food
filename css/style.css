@@ -112,7 +112,7 @@ footer {
   background-color: #010103;
     padding: 20px;
     text-align: center;
-    margin-top: auto; 
+    margin-top: 300px;
   }
   
   .social-icons {
@@ -140,7 +140,7 @@ footer {
 }
 .index .slider {
   width: 80%; 
-  max-width: 1600px; 
+  max-width: 1000px; 
   height: auto; 
   border-radius: 10px;
   overflow: hidden;
