@@ -29,7 +29,13 @@
 
         body {
             background: var(--mode);
+            margin: 0;
         }
+
+        #conteudo {
+          padding-bottom: 15rem;
+      }
+      
 
         section {
             justify-content: center;
@@ -108,12 +114,14 @@
     margin: 0 1rem; 
 }
  /* Rodapé */
-footer {
+ footer {
   background-color: #010103;
-    padding: 20px;
-    text-align: center;
-    margin-top: 30rem;
-  }
+  padding: 20px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
   
   .social-icons {
     margin: 10px;
@@ -135,9 +143,8 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 5%; 
   background: var(--mode);
-  margin-top: 7rem;
+  margin-bottom: 9rem;
 }
 .index .slider {
   width: 70%; 
