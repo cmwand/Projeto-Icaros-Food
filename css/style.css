@@ -112,7 +112,7 @@ footer {
   background-color: #010103;
     padding: 20px;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 30rem;
   }
   
   .social-icons {
@@ -135,12 +135,13 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; 
+  height: 5%; 
   background: var(--mode);
+  margin-top: 7rem;
 }
 .index .slider {
-  width: 80%; 
-  max-width: 80%; 
+  width: 70%; 
+  max-width: 70%; 
   height: auto; 
   border-radius: 10px;
   overflow: hidden;
@@ -172,23 +173,22 @@ footer {
 .index .navigation-manual{
   position: absolute;
   width: 800px;
-  margin-top: -40px;
   display: flex;
   justify-content: center;
-  margin-left: 24%;
 }
 
 .index .manual-btn{
   border: 2px solid #d3ad7f;
-  padding: 5px;
-  border-radius: 10px;
+  padding: 0.8%;
+  border-radius: 90%;
   cursor: pointer;
   transition: 1s;
-  align-items: center;
+  margin-top: 2%;
+  margin-left: 70%;
 }
 
 .index .manual-btn:not(:last-child){
-  margin-right: 40px;
+  margin-right: -50.4%;
 }
 
 .index .manual-btn:hover{
@@ -206,12 +206,9 @@ footer {
 /*navegacao automatica index*/
 
 .index .navigation-auto{
-  position: absolute;
   display: flex;
   width: 800px;
   justify-content: center;
-  margin-top: 43.54%;
-  margin-left: 24%;
 }
 
 .index .navigation-auto div{
@@ -222,7 +219,7 @@ footer {
 }
 
 .index .navigation-auto div:not(:last-child){
-  margin-right: 40px;
+  margin-right: 4%;
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
