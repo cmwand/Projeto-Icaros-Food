@@ -12,7 +12,7 @@ function startSlider() {
   }, 4500);
 }
 
-  // Carregar paginas
+// Carregar paginas
   document.querySelectorAll('a').forEach(link => {
     const cont = document.getElementById('conteudo');
 
@@ -39,6 +39,15 @@ function onChangePassword(){
   togglePasswordErrors();
 }
 
+function login(){
+  window.location.href = "index.html";
+}
+
+function register(){
+  window.location.href = "../paginas/registro.html";
+}
+
+//Validação email
 
 function isEmailValid(){
   const email = form.email().value;
@@ -48,6 +57,11 @@ function isEmailValid(){
   return validateEmail(email);
 }
 
+function validateEmail(email){
+  return /\S+@\S+.\S+/.test(email);
+}
+
+// Mensagens de erro do email
 
 function toggleEmailErrors(){
   const email = form.email().value;
@@ -65,6 +79,8 @@ function toggleEmailErrors(){
 
 }
 
+// Mensagens de erro da senha
+
 function togglePasswordErrors(){
   const password = form.password().value;
   if (!password){
@@ -74,7 +90,7 @@ function togglePasswordErrors(){
   }
 }
 
-
+// Habilitar/Desabilitar botão conforme a validação do campo
 
 function toggleButtonsDisable(){
   const emailValid = isEmailValid();
@@ -93,9 +109,7 @@ function isPasswordValid(){
   return true;
 }
 
-function validateEmail(email){
-  return /\S+@\S+.\S+/.test(email);
-}
+// Refatorando o código.
 
 const form = {
   email: () => document.getElementById('email'),
