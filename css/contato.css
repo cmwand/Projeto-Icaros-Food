@@ -1,11 +1,5 @@
-  /*Estilo da página CONTATO*/ 
-.contact .h1 {
-   text-align: center;
-   color: white;
-   font-size: large;
-   width: 100%;
-   margin-top: 2%;
- }
+/* Estilo da página CONTATO */
+
 .contact .row {
    display: flex;
    background: var(--black);
@@ -13,7 +7,21 @@
    gap: 4rem;
    margin-bottom: 90px;
    margin-top: 120px;
-}
+ }
+ 
+ .contact .h1 {
+   text-align: center;
+   color: white;
+   font-size: large;
+   width: 100%;
+   margin-top: 2%;
+ }
+ 
+ .contact .row iframe {
+   flex: 1 1 45rem;
+   margin: 1%;
+ }
+ 
  .contact .row form {
    flex: 12%;
    padding: 1%;
@@ -21,26 +29,27 @@
    margin-bottom: 5%;
  }
  
-.contact .row form h3 {
+ .contact .row form h3 {
    text-transform: uppercase;
    font-size: 3.5rem;
    color: #fff;
-}
- .contact .row form .inputBox{
-    display: flex;
-    align-items: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    background: var(--bg);
-    border: var(--border);
  }
-
- .contact .row form .inputBox material-icons{
-    color: #fff;
-    font-size: 2rem;
-    padding-left: 3rem;
+ 
+ .contact .row form .inputBox {
+   display: flex;
+   align-items: center;
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   background: var(--bg);
+   border: var(--border);
  }
-
+ 
+ .contact .row form .inputBox material-icons {
+   color: #fff;
+   font-size: 2rem;
+   padding-left: 3rem;
+ }
+ 
  .contact .row form .inputBox input {
    width: 100%;
    padding: 2rem;
@@ -49,8 +58,8 @@
    text-transform: none;
    background: none;
  }
-  
-.contact .row form textarea {
+ 
+ .contact .row form textarea {
    display: flex;
    align-items: center;
    margin-top: 10.5%;
@@ -61,4 +70,5 @@
    border: none;
    outline: none;
    resize: none;
-}
+ }
+ 
