@@ -29,13 +29,7 @@
 
         body {
             background: var(--mode);
-            margin: 0;
         }
-
-        #conteudo {
-          padding-bottom: 15rem;
-      }
-      
 
         section {
             justify-content: center;
@@ -114,14 +108,12 @@
     margin: 0 1rem; 
 }
  /* Rodapé */
- footer {
+footer {
   background-color: #010103;
-  padding: 20px;
-  text-align: center;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-}
+    padding: 20px;
+    text-align: center;
+    margin-top: 300px;
+  }
   
   .social-icons {
     margin: 10px;
@@ -143,18 +135,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh; 
   background: var(--mode);
-  margin-bottom: 9rem;
 }
 .index .slider {
-  width: 70%; 
-  max-width: 70%; 
+  width: 80%; 
+  max-width: 1000px; 
   height: auto; 
   border-radius: 10px;
   overflow: hidden;
   margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 17%;
+    margin-right: auto;
 }
 
 .index .slides {
@@ -181,21 +172,23 @@
 .index .navigation-manual{
   position: absolute;
   width: 800px;
+  margin-top: -40px;
   display: flex;
-  margin-left: 33.3%;
+  justify-content: center;
+  margin-left: 380px;
 }
 
 .index .manual-btn{
   border: 2px solid #d3ad7f;
-  padding: 0.8%;
-  border-radius: 90%;
+  padding: 5px;
+  border-radius: 10px;
   cursor: pointer;
   transition: 1s;
-  margin-top: 2%;
+  align-items: center;
 }
 
 .index .manual-btn:not(:last-child){
-  margin-right: 5rem;
+  margin-right: 40px;
 }
 
 .index .manual-btn:hover{
@@ -213,9 +206,12 @@
 /*navegacao automatica index*/
 
 .index .navigation-auto{
+  position: absolute;
   display: flex;
   width: 800px;
   justify-content: center;
+  margin-top: 862px;
+  margin-left: 380px;
 }
 
 .index .navigation-auto div{
@@ -226,7 +222,7 @@
 }
 
 .index .navigation-auto div:not(:last-child){
-  margin-right: -60%;
+  margin-right: 40px;
 }
 
 #radio1:checked ~ .navigation-auto .auto-btn1{
