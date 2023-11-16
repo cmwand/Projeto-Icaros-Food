@@ -1,34 +1,40 @@
 /*login*/
-  label{
-    color: white;
-  }
+.login label{
+  color: white;
+  font-size: 2rem;
+}
 
-  body{
-    background-color: black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
+.login body{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  form{
-    width: 300px;
-  }
+.login form{
+  width: 300px;
+  border: 0.125rem solid var(--main-color);
+  background-color: black;
+  border-radius: 0.310rem;
+  margin-left: 40.1%;
+  margin-top: 7%;
+  font-size: 2rem;
+}
 
-  input, button{
-    padding: 10px;
-    width: -webkit-fill-available;
-  }
+.login input, button{
+  padding: 10px;
+  width: -webkit-fill-available;
+}
 
-  button{
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
+.login button{
+  cursor: pointer;
+  margin-bottom: 10px;
+}
 
-  input{
-    border: none;
-  }
+.login input{
+  border: none;
+}
 
-  form-field {
-    margin-bottom: 10px;
-  }
+.login form-field {
+  margin-bottom: 10px;
+}
