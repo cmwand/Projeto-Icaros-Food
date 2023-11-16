@@ -42,29 +42,29 @@
       margin-top: 2rem;
   }
 }
-.clear{
+.login .clear{
     color: white;
     background: transparent;
     border: nono;
   }
-  .solid{
+  .login .solid{
     background: white;
     border: none;
   }
-  .outline{
+  .login .outline{
     background: transparent;
     color: white;
     border: 1px solid white;
   }
-  .error{
+  .login .error{
     color: white;
     background: red;
     display: none;
   }
-  button:active{
+  .login button:active{
     opacity: 0.8;
   }
 
-  button[disabled]{
+  .login button[disabled]{
     opacity: 0.7;
   }
