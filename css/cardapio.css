@@ -1,120 +1,69 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/global.css">
-    <link rel="stylesheet" href="../css/cardapio.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Document</title>
-</head>
-<body>
-    <section class="cardapio" id="cardapio">
-        <div class="box-container">
-      
-          <div class="box">
-            <img src="../img/coxpeq.png" width="250" alt="" class="quote">
-            <div class="h1">
-            <h1>Salgadinhos R$1,50</h1>
-            </div>
-            <p>Compre nossos deliciosos Salgados por um preço acessível!</p>
-            <div class="label">
-              <h2>Selecione seu salgado!</h2>
-              <div class="sel_val">
-                <select id="seletor" name="seletor">
-                  <option value="salp1">Coxinha</option>
-                  <option value="salp2">Kibe</option>
-                  <option value="salp3">Presunto</option>
-                  <option value="salp4">Alho</option>
-                  <option value="salp5">Calabresa</option>
-                  <option value="salp6">Salsicha</option>
-                  <option value="salp7">Peito de peru</option>
-                <option value="salp8">Cheddar e bacon</option>
-                </select>
-              </div>
-            </div>
-          </div>
-      
-          <div class="box">
-            <img src="../img/coxgran.png" width="250" alt="" class="quote">
-            <div class="h1">
-            <h1>Coxinha Grande R$5,00</h1>
-            </div>
-            <p>Coxinha com tamanho estendido com diversos sabores!</p>
-            <div class="label">
-              <h2>Escolha o sabor!</h2>
-              <div class="sel_val">
-                <select id="seletor" name="seletor">
-                  <option value="cox1">Frango com catupiry</option>
-                  <option value="cox2">Calabresa com queijo</option>
-                  <option value="cox3">Queijo com presunto</option>
-                </select>
-              </div>
-            </div>
-          </div>
-          
-          <div class="box">
-            <img src="../img/5kcroissant.png" width="250" alt="" class="quote">
-            <div class="h1">
-            <h1>Salgados Assados R$6,00</h1>
-            </div>
-            <p>Salgados assados com um tamanho de dar água na boca!</p>
-            <div class="label">
-              <h2>Escolha qual salgado!</h2>
-              <div class="sel_val">
-                <select id="seletor" name="seletor">
-                  <option value="salg1">Croassaint quatro-queijos</option>
-                  <option value="salg2">Croassaint frango</option>
-                  <option value="salg3">Hambúrguer de forno</option>
-                </select>
-              </div>
-            </div>
-          </div>
-      
-          <div class="box">
-            <img src="../img/bebs.png" width="250" alt="" class="quote">
-            <div class="h1">
-            <h1>Bebidas R$6,00 - R$8,00</h1>
-            </div>
-            <p>Escolha das mais diversas bebidas com sabores imperdíveis!</p>
-            <div class="label">
-              <h2>Selecione sua bebida</h2>
-              <div class="sel_val">
-                <select id="seletor" name="seletor">
-                  <option value="beb1">Coca-Cola lata R$6,00</option>
-                  <option value="beb2">Coca-Cola 600ml R$7,50</option>
-                  <option value="beb3">Guaraná 1lt R$8,00</option>
-                  <option value="beb4">Guaraviton R$6,00</option>
-                  <option value="beb5">Guaracamp R$2,50</option>
-                  <option value="beb6">Mate 300ml R$6,00</option>
-                </select>
-              </div>
-            </div>
-          </div>
-      
-          <div class="box">
-            <img src="../img/promocoes.png" width="250" alt="" class="quote">
-            <div class="h1">
-            <h1>Promoções R$7,50 - R$8,50</h1>
-            </div>
-            <p>Promoções de combos de salgados + refrigerante!</p>
-            <div class="label">
-              <h2>Escolha seu combo!</h2>
-              <div class="sel_val">
-                <select id="seletor" name="seletor">
-                  <option value="prom1">Salgado assado + guaracamp R$8,50</option>
-                  <option value="prom2">Salgado frito + guaracamp R$7,50</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <!--Final do Cardápio-->
+.cardapio .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+    gap: 1.5rem;
+    margin-bottom: 90px;
+    margin-top: 120px;
+    border-color: #000000;
+    
+ }
+ 
+ .cardapio .h1{
+   font-size:medium;
+   color: var(--dtext);
+ }
+ .cardapio .label{
+   font-size:medium;
+   color:#d3ad7f;
+ }
+ .cardapio .box-container .box{
+    border: var(--border);
+    text-align: center;
+    padding: 6rem 4rem;
+    border-color: #d3ad7f;
+ }
+
+ .cardapio .box-container .box p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--dtext);
+    padding: 2rem 0;
+    border-color: #000000;
+ }
+ .cardapio .box-container .box .user{
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+ }
+ .cardapio .box-container .box h3{
+    padding:1rem 0;
+    font-size: 2rem;
+    color: var(--dtext);
+ }
+
+.cardapio .label .sel_val select {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #000000;
+    border: 1px solid #d3ad7f;
+    border-radius: 5px; 
+    background-color: #fff;
+  }
   
-          <!--js customizado link-->
-  <script src="../javascript/script.js"></script>
-</body>
-</html>
+  .cardapio .label .sel_val select:hover {
+    border: 1px solid #d3ad7f;
+  }
+  
+  .cardapio .label .sel_val select option {
+    padding: 1rem;
+    background-color: #fff;
+    color: #000;
+    border: none;
+  }
+  
+  .cardapio .label .sel_val select:focus {
+    outline: none; 
+    border: 1px solid #d3ad7f;
+  }
