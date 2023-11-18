@@ -8,8 +8,91 @@
     <link rel="stylesheet" href="../css/registro.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Document</title>
+    <style>
+        body{
+        background-color:black;
+    }
+        .error-message {
+            color: red;
+        }
+    </style>
 </head>
 <body>
-    Registro!!!
+    <section class="login" id="login">
+        <div class="row">
+            <h1>Registro Icaro's Food</h1>
+            <form id="registration-form">
+                <div class="form-field">
+                    <br>
+                    <div><label>Nome</label></div>
+                    <input type="text" name="nome" id="nome" placeholder="Seu nome"/> <br>
+                    <div id="nome-error" class="error-message"></div> <br>
+        
+                    <div><label>Email</label></div>
+                    <input type="email" name="email" id="email" placeholder="seu@email.com"/>
+                    <div id="email-error" class="error-message"></div> <br>
+                </div> 
+                <div class="form-field">
+                    <div><label>Senha</label></div>
+                    <input type="password" name="password" id="password" placeholder="Senha"/>
+                    <div id="password-error" class="error-message"></div>
+                </div>
+                <br>
+                <div>
+                    <button type="button" class="solid" id="login-button">Registrar</button>
+                </div>
+            </form> <br>
+            <a href="../index.html">
+                <button class="btn">Retornar à página inicial</button>
+            </a>
+        </div>
+    </section>
+    <script>
+        document.getElementById('login-button').addEventListener('click', function() {
+            validateForm();
+        });
+
+        function validateForm() {
+            var nome = document.getElementById('nome').value;
+            var email = document.getElementById('email').value;
+            var password = document.getElementById('password').value;
+
+            document.getElementById('nome-error').innerHTML = '';
+            document.getElementById('email-error').innerHTML = '';
+            document.getElementById('password-error').innerHTML = '';
+
+            var isValid = true;
+
+            if (nome.trim() === '') {
+                document.getElementById('nome-error').innerHTML = 'Nome é obrigatório';
+                isValid = false;
+            }
+
+            if (email.trim() === '') {
+                document.getElementById('email-error').innerHTML = 'Insira um email válido';
+                isValid = false;
+            } else if (!isValidEmail(email)) {
+                document.getElementById('email-error').innerHTML = 'Insira um email válido';
+                isValid = false;
+            }
+
+            if (password.trim() === '') {
+                document.getElementById('password-error').innerHTML = 'Senha é obrigatória';
+                isValid = false;
+            } else if (password.length > 15) {
+                document.getElementById('password-error').innerHTML = 'A senha deve ter no máximo 15 caracteres';
+                isValid = false;
+            }
+
+            if (isValid) {
+                alert('Registrado com sucesso!');
+            }
+        }
+
+        function isValidEmail(email) {
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+    </script>
 </body>
 </html>
