@@ -1,4 +1,50 @@
-body{
-    background-color: aquamarine;
-
+/*registro*/
+.login label{
+    color: white;
+    font-size: 2.4rem;
+  }
+.login h1{
+    color: white;
+    font-size: 2rem;
+    margin-top: 5rem;
+    margin-left: 2rem;
 }
+.login .btn{
+  margin-left: 2rem;
+}
+  .login body{
+    background-color: black;
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 300px;
+  }
+  
+  .login form{
+    width: 500px;
+    border: 0.125rem solid var(--main-color);
+    background-color: black;
+    border-radius: 0.310rem;
+    margin-left: 34.4%;
+    margin-top: 5%;
+    font-size: 2rem;
+  }
+  
+  .login input, button{
+    padding: 10px;
+    width: -webkit-fill-available;
+  }
+  
+  .login button{
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .login input{
+    border: none;
+  }
+  
+  .login form-field {
+    margin-bottom: 10px;
+  }
