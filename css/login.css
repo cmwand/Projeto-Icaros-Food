@@ -1,41 +1,41 @@
-/*login*/
-.login label{
-  color: white;
-  font-size: 2.4rem;
-}
-
-.login body{
-  background-color: black;
-  display: flex;
-  width: 500px;
-  justify-content: center;
-  align-items: center;
-}
-
-.login form{
-  width: 500px;
-  border: 0.125rem solid var(--main-color);
-  background-color: black;
-  border-radius: 0.310rem;
-  margin-left: 34.4%;
-  margin-top: 5%;
-  font-size: 2rem;
-}
-
-.login input, button{
-  padding: 10px;
-  width: -webkit-fill-available;
-}
-
-.login button{
-  cursor: pointer;
-  margin-bottom: 10px;
-}
-
-.login input{
-  border: none;
-}
-
-.login form-field {
-  margin-bottom: 10px;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Document</title>
+</head>
+<body>
+  <section class="login" id="login">
+    <div class="row">
+        <form>
+            <div class="form-field">
+                <br>
+                <div><label>Email</label></div>
+                <input type="email" name="email" id="email" onchange="onChangeEmail()" placeholder="seu@email.com"/>
+                <div class="error" id="email-required-error">Email é obrigatório</div>
+                <div class="error" id="email-invalid-error">Email é inválido</div>
+            </div> <br>
+            <div class="form-field">
+                <div><label>Senha</label></div>
+                <input type="password" name="password" id="password" onchange="onChangePassword()" placeholder="Senha"/>
+                <div class="error" id="password-required-error">Senha é obrigatório</div>
+            </div>
+            <div>
+                <button type="button" class="clear" id="recover-password-button" disabled="true"> Recuperar Senha</button>
+            </div>
+            <div>
+                <button type="button" class="solid" id="login-button" disabled="true" onclick="login()">Entrar</button>
+            </div>
+            <div>
+                <button type="button" class="outline" onclick="register()">Registrar</button> <br> <br>
+            </div>
+        </form>
+    </div>
+</section>
+</body>
+</html>
