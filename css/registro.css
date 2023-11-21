@@ -1,50 +1,57 @@
 /*registro*/
-.login label{
-    color: white;
-    font-size: 2.4rem;
-  }
-.login h1{
-    color: white;
-    font-size: 2rem;
-    margin-top: 5rem;
-    margin-left: 2rem;
+.login label {
+  color: white;
+  font-size: 2.4rem;
 }
-.login .btn{
+
+.login h1 {
+  color: white;
+  font-size: 2rem;
+  margin-top: 5rem;
   margin-left: 2rem;
 }
-  .login body{
-    background-color: black;
-    display: flex;
-    width: 500px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 300px;
-  }
-  
-  .login form{
-    width: 500px;
-    border: 0.125rem solid var(--main-color);
-    background-color: black;
-    border-radius: 0.310rem;
-    margin-left: 34.4%;
-    margin-top: 5%;
-    font-size: 2rem;
-  }
-  
-  .login input, button{
-    padding: 10px;
-    width: -webkit-fill-available;
-  }
-  
-  .login button{
-    cursor: pointer;
-    margin-bottom: 10px;
-  }
-  
-  .login input{
-    border: none;
-  }
-  
-  .login form-field {
-    margin-bottom: 10px;
-  }
+
+.login .btn {
+  margin-left: auto;
+  width: 20%;
+  font-size: 2rem;
+}
+
+.login body {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.login form {
+  width: 90%;
+  max-width: 500px;
+  border: 0.125rem solid var(--main-color);
+  background-color: black;
+  border-radius: 0.310rem;
+  font-size: 2rem;
+  margin: auto;
+}
+
+.login input,
+.login button {
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login button {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.login input {
+  border: none;
+}
+
+.login form-field {
+  margin-bottom: 10px;
+}
