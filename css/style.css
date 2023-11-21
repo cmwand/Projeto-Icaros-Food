@@ -117,10 +117,6 @@
   width: 100%;
 }
   
-  .social-icons {
-    margin: 10px;
-  }
-  
   .icon-link {
     display: inline-block;
     margin: 0 10px;
@@ -223,4 +219,9 @@
 #icon{
   width: 25px;
   cursor:pointer;
+}
+
+.f_icaro .d_icaro{
+  color: var(--main-color);
+  font-size: medium;
 }
