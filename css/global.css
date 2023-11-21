@@ -51,6 +51,15 @@
     background: white;
     border: none;
   }
+
+  .login .solid{
+    color:black
+  }
+
+  .login .solid:hover{
+    background: var(--main-color);
+  }
+
   .login .outline{
     background: transparent;
     color: white;
@@ -60,11 +69,4 @@
     color: white;
     background: red;
     display: none;
-  }
-  .login button:active{
-    opacity: 0.8;
-  }
-
-  .login button[disabled]{
-    opacity: 0.7;
   }
