@@ -5,7 +5,7 @@
 }
 
 .login h1 {
-  color: white;
+  color: var(--dtext);
   font-size: 2rem;
   margin-top: 5rem;
   margin-left: 2rem;
@@ -15,10 +15,16 @@
   margin-left: auto;
   width: 20%;
   font-size: 2rem;
+  background-color: var(--dtext);
+  color: var(--mode)
+}
+
+.login .btn:hover {
+  background-color: var(--main-color);
 }
 
 .login body {
-  background-color: black;
+  background-color: var(--mode);
   display: flex;
   justify-content: center;
   align-items: center;
