@@ -7,27 +7,31 @@
 .login body{
   background-color: black;
   display: flex;
-  width: 500px;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 0; 
 }
 
 .login form{
-  width: 500px;
+  width: 90%;
+  max-width: 500px;
   border: 0.125rem solid var(--main-color);
   background-color: black;
   border-radius: 0.310rem;
-  margin-left: 34.4%;
-  margin-top: 5%;
   font-size: 2rem;
+  margin: auto;
+  margin-top: 4rem;
 }
 
-.login input, button{
+.login input,
+.login button {
   padding: 10px;
-  width: -webkit-fill-available;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.login button{
+.login button {
   cursor: pointer;
   margin-bottom: 10px;
 }
