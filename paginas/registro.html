@@ -10,7 +10,7 @@
     <title>Document</title>
     <style>
         body{
-        background-color:black;
+        background-color: var(--mode);
     }
         .error-message {
             color: red;
@@ -18,11 +18,13 @@
     </style>
 </head>
 <body>
+    
     <section class="login" id="login">
         <div class="row">
             <h1>Registro Icaro's Food</h1>
             <br> <br>
             <form id="registration-form">
+                <img src="/img/lightmode.png" id="icon">
                 <div class="form-field">
                     <br>
                     <div><label>Nome</label></div>
@@ -42,6 +44,7 @@
                 <div>
                     <button type="button" class="solid" id="login-button">Registrar</button>
                 </div>
+                <br>
             </form> <br>
             <a href="../index.html">
                 <button class="btn">Retornar à página inicial</button>
@@ -94,6 +97,23 @@
             var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
             return emailRegex.test(email);
         }
+    </script>
+    <script>
+        let modeColor = "--mode";
+
+document.getElementById("icon").addEventListener("click", function() {
+  const body = document.body;
+    const currentModeColor = getComputedStyle(body).getPropertyValue("background-color").trim();
+  if (currentModeColor === "rgb(255, 255, 255)") {
+    body.style.setProperty(modeColor, "#010103");
+    document.documentElement.style.setProperty("--dtext", "#ffffff");
+    icon.src = "/img/darkmode.png";
+  } else {
+    body.style.setProperty(modeColor, "#ffffff");
+    document.documentElement.style.setProperty("--dtext", "#000000");
+    icon.src = "/img/lightmode.png";
+  }
+});
     </script>
 </body>
 </html>
